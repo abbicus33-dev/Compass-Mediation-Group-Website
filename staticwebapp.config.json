@@ -86,6 +86,10 @@
       "rewrite": "/what-to-expect.html"
     },
     {
+      "route": "/locations",
+      "rewrite": "/locations.html"
+    },
+    {
       "route": "/how-mediation-works",
       "redirect": "/how-it-works",
       "statusCode": 301
@@ -167,52 +171,52 @@
     },
     {
       "route": "/longview-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/seattle-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/phoenix-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/san-diego-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/olympia-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/avondale-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/lindenhurst-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/portland-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/tacoma-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
       "route": "/los-angeles-mediation",
-      "redirect": "/",
+      "redirect": "/locations",
       "statusCode": 301
     },
     {
