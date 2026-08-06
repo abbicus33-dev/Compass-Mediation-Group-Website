@@ -90,6 +90,10 @@
       "rewrite": "/locations.html"
     },
     {
+      "route": "/library",
+      "rewrite": "/library.html"
+    },
+    {
       "route": "/how-mediation-works",
       "redirect": "/how-it-works",
       "statusCode": 301
