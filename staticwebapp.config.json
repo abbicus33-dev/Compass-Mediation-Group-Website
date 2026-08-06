@@ -94,6 +94,346 @@
       "rewrite": "/library.html"
     },
     {
+      "route": "/post/comprehensive-affordable-divorce-mediation-options-explained",
+      "rewrite": "/post-comprehensive-affordable-divorce-mediation-options-explained.html"
+    },
+    {
+      "route": "/post/top-divorce-mediators-in-new-york",
+      "rewrite": "/post-top-divorce-mediators-in-new-york.html"
+    },
+    {
+      "route": "/post/why-a-divorce-mediator-can-save-you-time-and-stress",
+      "rewrite": "/post-why-a-divorce-mediator-can-save-you-time-and-stress.html"
+    },
+    {
+      "route": "/post/embrace-harmony-make-mediation-your-new-year-s-resolution",
+      "rewrite": "/post-embrace-harmony-make-mediation-your-new-year-s-resolution.html"
+    },
+    {
+      "route": "/post/finding-peace-at-the-christmas-table-how-mediation-can-help-resolve-family-conflicts",
+      "rewrite": "/post-finding-peace-at-the-christmas-table-how-mediation-can-help-resolve-family-conflicts.html"
+    },
+    {
+      "route": "/post/what-is-your-body-telling-people",
+      "rewrite": "/post-what-is-your-body-telling-people.html"
+    },
+    {
+      "route": "/post/the-double-edged-sword-of-sarcasm",
+      "rewrite": "/post-the-double-edged-sword-of-sarcasm.html"
+    },
+    {
+      "route": "/post/how-to-mediate-a-successful-parenting-plan",
+      "rewrite": "/post-how-to-mediate-a-successful-parenting-plan.html"
+    },
+    {
+      "route": "/post/conflict-is-a-canyon",
+      "rewrite": "/post-conflict-is-a-canyon.html"
+    },
+    {
+      "route": "/post/the-benefits-of-mediation-in-business-disputes",
+      "rewrite": "/post-the-benefits-of-mediation-in-business-disputes.html"
+    },
+    {
+      "route": "/post/dignity-a-key-to-successful-mediation",
+      "rewrite": "/post-dignity-a-key-to-successful-mediation.html"
+    },
+    {
+      "route": "/post/how-to-find-a-great-divorce-mediator-the-ultimate-guide",
+      "rewrite": "/post-how-to-find-a-great-divorce-mediator-the-ultimate-guide.html"
+    },
+    {
+      "route": "/post/stay-together-or-separate-what-is-better-for-the-kids",
+      "rewrite": "/post-stay-together-or-separate-what-is-better-for-the-kids.html"
+    },
+    {
+      "route": "/post/you-have-created-everything-you-are-experiencing",
+      "rewrite": "/post-you-have-created-everything-you-are-experiencing.html"
+    },
+    {
+      "route": "/post/tips-for-managing-children-s-needs-when-divorce-impairs-communications",
+      "rewrite": "/post-tips-for-managing-children-s-needs-when-divorce-impairs-communications.html"
+    },
+    {
+      "route": "/post/the-therapy-cocktail-divorcing-parents-ultimate-gift-to-their-children",
+      "rewrite": "/post-the-therapy-cocktail-divorcing-parents-ultimate-gift-to-their-children.html"
+    },
+    {
+      "route": "/post/mediation-a-fantastic-tool-for-estate-probate-conflicts",
+      "rewrite": "/post-mediation-a-fantastic-tool-for-estate-probate-conflicts.html"
+    },
+    {
+      "route": "/post/back-in-the-soup",
+      "rewrite": "/post-back-in-the-soup.html"
+    },
+    {
+      "route": "/post/covid-19-decreased-the-rate-of-divorce-and-may-have-changed-it-forever",
+      "rewrite": "/post-covid-19-decreased-the-rate-of-divorce-and-may-have-changed-it-forever.html"
+    },
+    {
+      "route": "/post/mediation-for-struggling-landlords-and-tenants",
+      "rewrite": "/post-mediation-for-struggling-landlords-and-tenants.html"
+    },
+    {
+      "route": "/post/effectiveness-of-mediation",
+      "rewrite": "/post-effectiveness-of-mediation.html"
+    },
+    {
+      "route": "/post/what-s-news-next-quarter",
+      "rewrite": "/post-what-s-news-next-quarter.html"
+    },
+    {
+      "route": "/post/why-mediation",
+      "rewrite": "/post-why-mediation.html"
+    },
+    {
+      "route": "/post/what-s-up-next",
+      "rewrite": "/post-what-s-up-next.html"
+    },
+    {
+      "route": "/post/tips-for-better-conversations-in-your-career-and-business",
+      "rewrite": "/post-tips-for-better-conversations-in-your-career-and-business.html"
+    },
+    {
+      "route": "/post/compassion-is-key-to-your-success",
+      "rewrite": "/post-compassion-is-key-to-your-success.html"
+    },
+    {
+      "route": "/post/untitled",
+      "rewrite": "/post-untitled.html"
+    },
+    {
+      "route": "/post/finding-the-right-mediator-for-divorce",
+      "rewrite": "/post-finding-the-right-mediator-for-divorce.html"
+    },
+    {
+      "route": "/post/a-guide-to-how-virtual-mediation-works-in-divorce-cases",
+      "rewrite": "/post-a-guide-to-how-virtual-mediation-works-in-divorce-cases.html"
+    },
+    {
+      "route": "/post/understanding-the-divorce-resolution-process-1",
+      "rewrite": "/post-understanding-the-divorce-resolution-process-1.html"
+    },
+    {
+      "route": "/post/resolving-workplace-disputes-through-mediation",
+      "rewrite": "/post-resolving-workplace-disputes-through-mediation.html"
+    },
+    {
+      "route": "/post/resolving-disputes-with-business-conflict-mediation-services-1",
+      "rewrite": "/post-resolving-disputes-with-business-conflict-mediation-services-1.html"
+    },
+    {
+      "route": "/post/business-conflict-resolutions-through-mediation",
+      "rewrite": "/post-business-conflict-resolutions-through-mediation.html"
+    },
+    {
+      "route": "/post/comprehensive-guide-to-family-conflict-services",
+      "rewrite": "/post-comprehensive-guide-to-family-conflict-services.html"
+    },
+    {
+      "route": "/post/effective-workplace-conflict-resolution-tips",
+      "rewrite": "/post-effective-workplace-conflict-resolution-tips.html"
+    },
+    {
+      "route": "/post/effective-strategies-for-resolving-family-disputes",
+      "rewrite": "/post-effective-strategies-for-resolving-family-disputes.html"
+    },
+    {
+      "route": "/post/understanding-the-divorce-resolution-process-3",
+      "rewrite": "/post-understanding-the-divorce-resolution-process-3.html"
+    },
+    {
+      "route": "/post/the-benefits-of-choosing-family-mediation-services",
+      "rewrite": "/post-the-benefits-of-choosing-family-mediation-services.html"
+    },
+    {
+      "route": "/post/navigating-the-divorce-mediation-process-steps-in-divorce-mediation",
+      "rewrite": "/post-navigating-the-divorce-mediation-process-steps-in-divorce-mediation.html"
+    },
+    {
+      "route": "/post/10-tips-for-navigating-conflict-with-clarity-and-compassion",
+      "rewrite": "/post-10-tips-for-navigating-conflict-with-clarity-and-compassion.html"
+    },
+    {
+      "route": "/post/benefits-of-consulting-professional-mediators-for-expert-conflict-mediation-3",
+      "rewrite": "/post-benefits-of-consulting-professional-mediators-for-expert-conflict-mediation-3.html"
+    },
+    {
+      "route": "/post/understanding-the-divorce-resolution-process-2",
+      "rewrite": "/post-understanding-the-divorce-resolution-process-2.html"
+    },
+    {
+      "route": "/post/expert-family-mediation-tips-for-peaceful-conflict-resolution",
+      "rewrite": "/post-expert-family-mediation-tips-for-peaceful-conflict-resolution.html"
+    },
+    {
+      "route": "/post/benefits-of-consulting-professional-mediators-for-expert-conflict-mediation-2",
+      "rewrite": "/post-benefits-of-consulting-professional-mediators-for-expert-conflict-mediation-2.html"
+    },
+    {
+      "route": "/post/the-role-of-mediators-how-professional-mediators-ensure-fair-resolutions",
+      "rewrite": "/post-the-role-of-mediators-how-professional-mediators-ensure-fair-resolutions.html"
+    },
+    {
+      "route": "/post/steps-to-a-successful-divorce-mediation-process",
+      "rewrite": "/post-steps-to-a-successful-divorce-mediation-process.html"
+    },
+    {
+      "route": "/post/effective-mediation-for-probate-disputes",
+      "rewrite": "/post-effective-mediation-for-probate-disputes.html"
+    },
+    {
+      "route": "/post/effective-strategies-for-family-conflict-resolution",
+      "rewrite": "/post-effective-strategies-for-family-conflict-resolution.html"
+    },
+    {
+      "route": "/post/the-divorce-mediation-process-explained-steps-in-divorce-mediation",
+      "rewrite": "/post-the-divorce-mediation-process-explained-steps-in-divorce-mediation.html"
+    },
+    {
+      "route": "/post/understanding-the-power-of-mediation-in-conflict-resolution",
+      "rewrite": "/post-understanding-the-power-of-mediation-in-conflict-resolution.html"
+    },
+    {
+      "route": "/post/navigating-the-divorce-mediation-process-steps-in-divorce-mediation-1",
+      "rewrite": "/post-navigating-the-divorce-mediation-process-steps-in-divorce-mediation-1.html"
+    },
+    {
+      "route": "/post/resolving-family-conflicts-through-mediation",
+      "rewrite": "/post-resolving-family-conflicts-through-mediation.html"
+    },
+    {
+      "route": "/post/divorce-mediators-explained-the-role-of-mediators-in-divorce",
+      "rewrite": "/post-divorce-mediators-explained-the-role-of-mediators-in-divorce.html"
+    },
+    {
+      "route": "/post/exploring-professional-conflict-mediation-a-path-to-peaceful-resolutions",
+      "rewrite": "/post-exploring-professional-conflict-mediation-a-path-to-peaceful-resolutions.html"
+    },
+    {
+      "route": "/post/resolving-disputes-with-business-conflict-mediation-services-3",
+      "rewrite": "/post-resolving-disputes-with-business-conflict-mediation-services-3.html"
+    },
+    {
+      "route": "/post/benefits-of-consulting-professional-mediators-for-expert-conflict-mediation-1",
+      "rewrite": "/post-benefits-of-consulting-professional-mediators-for-expert-conflict-mediation-1.html"
+    },
+    {
+      "route": "/post/resolving-family-disputes-with-family-dispute-mediation-solutions",
+      "rewrite": "/post-resolving-family-disputes-with-family-dispute-mediation-solutions.html"
+    },
+    {
+      "route": "/post/navigating-estate-issues-how-mediation-can-help-families-negotiate-and-heal-after-a-loss",
+      "rewrite": "/post-navigating-estate-issues-how-mediation-can-help-families-negotiate-and-heal-after-a-loss.html"
+    },
+    {
+      "route": "/post/steps-to-mediate-family-disputes-successfully",
+      "rewrite": "/post-steps-to-mediate-family-disputes-successfully.html"
+    },
+    {
+      "route": "/post/adapting-to-virtual-divorce-mediation-benefits-of-virtual-mediation-for-families-and-businesses-1",
+      "rewrite": "/post-adapting-to-virtual-divorce-mediation-benefits-of-virtual-mediation-for-families-and-businesses-1.html"
+    },
+    {
+      "route": "/post/the-role-of-mediators-in-divorce",
+      "rewrite": "/post-the-role-of-mediators-in-divorce.html"
+    },
+    {
+      "route": "/post/business-mediation-services-for-conflict-resolution-corporate-mediation-solutions",
+      "rewrite": "/post-business-mediation-services-for-conflict-resolution-corporate-mediation-solutions.html"
+    },
+    {
+      "route": "/post/expert-family-mediation-advice-for-disputes",
+      "rewrite": "/post-expert-family-mediation-advice-for-disputes.html"
+    },
+    {
+      "route": "/post/key-benefits-of-divorce-mediation-for-couples",
+      "rewrite": "/post-key-benefits-of-divorce-mediation-for-couples.html"
+    },
+    {
+      "route": "/post/resolving-disputes-with-business-conflict-mediation-services-2",
+      "rewrite": "/post-resolving-disputes-with-business-conflict-mediation-services-2.html"
+    },
+    {
+      "route": "/post/resolving-disputes-with-business-conflict-mediation-services",
+      "rewrite": "/post-resolving-disputes-with-business-conflict-mediation-services.html"
+    },
+    {
+      "route": "/post/finding-the-right-professional-mediators",
+      "rewrite": "/post-finding-the-right-professional-mediators.html"
+    },
+    {
+      "route": "/post/the-role-of-mediation-in-business-disputes",
+      "rewrite": "/post-the-role-of-mediation-in-business-disputes.html"
+    },
+    {
+      "route": "/post/adapting-to-virtual-divorce-mediation-benefits-of-virtual-mediation-for-families-and-businesses-2",
+      "rewrite": "/post-adapting-to-virtual-divorce-mediation-benefits-of-virtual-mediation-for-families-and-businesses-2.html"
+    },
+    {
+      "route": "/post/adapting-to-virtual-divorce-mediation-benefits-of-virtual-mediation-for-families-and-businesses",
+      "rewrite": "/post-adapting-to-virtual-divorce-mediation-benefits-of-virtual-mediation-for-families-and-businesses.html"
+    },
+    {
+      "route": "/post/effective-strategies-for-resolving-conflicts-through-mediation",
+      "rewrite": "/post-effective-strategies-for-resolving-conflicts-through-mediation.html"
+    },
+    {
+      "route": "/post/simplify-divorce-with-mediation-support",
+      "rewrite": "/post-simplify-divorce-with-mediation-support.html"
+    },
+    {
+      "route": "/post/resolving-conflicts-with-family-mediation-a-path-to-family-dispute-resolution",
+      "rewrite": "/post-resolving-conflicts-with-family-mediation-a-path-to-family-dispute-resolution.html"
+    },
+    {
+      "route": "/post/benefits-of-consulting-professional-mediators-for-expert-conflict-mediation",
+      "rewrite": "/post-benefits-of-consulting-professional-mediators-for-expert-conflict-mediation.html"
+    },
+    {
+      "route": "/post/exploring-professional-mediator-benefits-a-path-to-peaceful-resolutions",
+      "rewrite": "/post-exploring-professional-mediator-benefits-a-path-to-peaceful-resolutions.html"
+    },
+    {
+      "route": "/post/understanding-the-divorce-resolution-process",
+      "rewrite": "/post-understanding-the-divorce-resolution-process.html"
+    },
+    {
+      "route": "/post/top-reasons-to-choose-divorce-settlement-mediation",
+      "rewrite": "/post-top-reasons-to-choose-divorce-settlement-mediation.html"
+    },
+    {
+      "route": "/post/benefits-of-hiring-professional-mediators",
+      "rewrite": "/post-benefits-of-hiring-professional-mediators.html"
+    },
+    {
+      "route": "/post/how-mediation-resolves-conflicts-effectively",
+      "rewrite": "/post-how-mediation-resolves-conflicts-effectively.html"
+    },
+    {
+      "route": "/post/step-by-step-divorce-mediation-process-a-clear-path-to-resolution",
+      "rewrite": "/post-step-by-step-divorce-mediation-process-a-clear-path-to-resolution.html"
+    },
+    {
+      "route": "/post/the-role-of-divorce-mediators-how-mediators-facilitate-divorce-resolutions",
+      "rewrite": "/post-the-role-of-divorce-mediators-how-mediators-facilitate-divorce-resolutions.html"
+    },
+    {
+      "route": "/post/____9",
+      "rewrite": "/post-____9.html"
+    },
+    {
+      "route": "/post/why-professional-mediation-services-matter",
+      "rewrite": "/post-why-professional-mediation-services-matter.html"
+    },
+    {
+      "route": "/post/understanding-divorce-mediation-solutions",
+      "rewrite": "/post-understanding-divorce-mediation-solutions.html"
+    },
+    {
+      "route": "/post/practical-tips-for-effective-family-mediation",
+      "rewrite": "/post-practical-tips-for-effective-family-mediation.html"
+    },
+    {
       "route": "/how-mediation-works",
       "redirect": "/how-it-works",
       "statusCode": 301
@@ -160,7 +500,17 @@
     },
     {
       "route": "/blog",
-      "redirect": "/resources",
+      "redirect": "/library",
+      "statusCode": 301
+    },
+    {
+      "route": "/blog-1",
+      "redirect": "/library",
+      "statusCode": 301
+    },
+    {
+      "route": "/post/navigating-the-divorce-mediation-process-steps-in-divorce-mediation-2",
+      "redirect": "/library",
       "statusCode": 301
     },
     {
