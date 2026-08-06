@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json.schemastore.org/staticwebapp.config.json",
+  "routes": [
+    {
+      "route": "/about",
+      "rewrite": "/about.html"
+    },
+    {
+      "route": "/alisa-kharis",
+      "rewrite": "/alisa-kharis.html"
+    },
+    {
+      "route": "/book",
+      "rewrite": "/book.html"
+    },
+    {
+      "route": "/business",
+      "rewrite": "/business.html"
+    },
+    {
+      "route": "/contact",
+      "rewrite": "/contact.html"
+    },
+    {
+      "route": "/divorce",
+      "rewrite": "/divorce.html"
+    },
+    {
+      "route": "/do-i-need-a-lawyer-for-mediation",
+      "rewrite": "/do-i-need-a-lawyer-for-mediation.html"
+    },
+    {
+      "route": "/estate",
+      "rewrite": "/estate.html"
+    },
+    {
+      "route": "/family",
+      "rewrite": "/family.html"
+    },
+    {
+      "route": "/faq",
+      "rewrite": "/faq.html"
+    },
+    {
+      "route": "/how-it-works",
+      "rewrite": "/how-it-works.html"
+    },
+    {
+      "route": "/is-mediation-legally-binding",
+      "rewrite": "/is-mediation-legally-binding.html"
+    },
+    {
+      "route": "/legal-notices",
+      "rewrite": "/legal-notices.html"
+    },
+    {
+      "route": "/members",
+      "rewrite": "/members.html"
+    },
+    {
+      "route": "/our-team",
+      "rewrite": "/our-team.html"
+    },
+    {
+      "route": "/pricing",
+      "rewrite": "/pricing.html"
+    },
+    {
+      "route": "/privacy-policy",
+      "rewrite": "/privacy-policy.html"
+    },
+    {
+      "route": "/resources",
+      "rewrite": "/resources.html"
+    },
+    {
+      "route": "/terms-of-service",
+      "rewrite": "/terms-of-service.html"
+    },
+    {
+      "route": "/testimonials",
+      "rewrite": "/testimonials.html"
+    },
+    {
+      "route": "/what-to-expect",
+      "rewrite": "/what-to-expect.html"
+    },
+    {
+      "route": "/how-mediation-works",
+      "redirect": "/how-it-works",
+      "statusCode": 301
+    },
+    {
+      "route": "/reviews",
+      "redirect": "/testimonials",
+      "statusCode": 301
+    },
+    {
+      "route": "/co-parenting-mediation",
+      "redirect": "/family",
+      "statusCode": 301
+    },
+    {
+      "route": "/workplace-mediation",
+      "redirect": "/business",
+      "statusCode": 301
+    },
+    {
+      "route": "/elder-care-mediation",
+      "redirect": "/estate",
+      "statusCode": 301
+    },
+    {
+      "route": "/spousal-support-mediation",
+      "redirect": "/divorce",
+      "statusCode": 301
+    },
+    {
+      "route": "/property-division-mediation",
+      "redirect": "/divorce",
+      "statusCode": 301
+    },
+    {
+      "route": "/child-custody-mediation",
+      "redirect": "/family",
+      "statusCode": 301
+    },
+    {
+      "route": "/partnership-dissolution-mediation",
+      "redirect": "/business",
+      "statusCode": 301
+    },
+    {
+      "route": "/mediation-vs-collaborative-divorce",
+      "redirect": "/divorce",
+      "statusCode": 301
+    },
+    {
+      "route": "/mediation-vs-arbitration",
+      "redirect": "/resources",
+      "statusCode": 301
+    },
+    {
+      "route": "/mediation-vs-litigation",
+      "redirect": "/resources",
+      "statusCode": 301
+    },
+    {
+      "route": "/virtual-mediation",
+      "redirect": "/how-it-works",
+      "statusCode": 301
+    },
+    {
+      "route": "/blog",
+      "redirect": "/resources",
+      "statusCode": 301
+    },
+    {
+      "route": "/press",
+      "redirect": "/resources",
+      "statusCode": 301
+    },
+    {
+      "route": "/therapists",
+      "redirect": "/contact",
+      "statusCode": 301
+    },
+    {
+      "route": "/longview-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/seattle-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/phoenix-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/san-diego-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/olympia-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/avondale-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/lindenhurst-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/portland-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/tacoma-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/los-angeles-mediation",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/synergymp",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/my-addresses",
+      "redirect": "/members",
+      "statusCode": 301
+    },
+    {
+      "route": "/blocked",
+      "redirect": "/",
+      "statusCode": 301
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  },
+  "mimeTypes": {
+    ".html": "text/html"
+  }
+}
