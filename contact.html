@@ -179,6 +179,10 @@
     e.preventDefault();
     var g=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};
     var fn=g('cf_first'),ln=g('cf_last'),em=g('cf_email'),ph=g('cf_phone'),pc=g('cf_contact'),msg=g('cf_msg');
+    var who=(fn+' '+ln).trim()||em||'Website visitor';
+    var digits=ph.replace(/\D/g,'');
+    var phoneFmt=(digits.length===10)?('('+digits.slice(0,3)+') '+digits.slice(3,6)+'-'+digits.slice(6)):ph;
+    var subj='New website inquiry: '+who+(pc?(' — prefers '+pc):'');
     if(!em || !msg){ if(note){note.style.color='var(--terra)';note.textContent='Please add your email and a short message so we can reply.';} return; }
     if(note){note.style.color='var(--gray)';note.textContent='Sending\u2026';}
     if(btn){btn.disabled=true;}
@@ -188,10 +192,10 @@
       body:JSON.stringify({
         access_key:'fa159105-3aa8-4e3a-8f74-eaf3f72e5d29',
         from_name:'Compass Mediation Group Website',
-        subject:'New consultation inquiry from your website',
+        subject:subj,
         name:(fn+' '+ln).trim(),
         email:em,
-        phone:ph,
+        phone:phoneFmt,
         'Preferred contact method':pc,
         message:msg
       })
