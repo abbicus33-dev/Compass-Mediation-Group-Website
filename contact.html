@@ -64,8 +64,8 @@
   .ccard h2{font-size:28px;margin-bottom:8px;}
   .ccard>p{color:#5a5560;font-size:15.5px;margin-bottom:18px;}
   form label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.02em;color:var(--slate);margin:14px 0 5px;text-transform:uppercase;}
-  form input,form textarea{width:100%;padding:11px 13px;border:1.5px solid #ddd9e5;border-radius:9px;font-family:inherit;font-size:15px;color:var(--ink);background:#fdfcfe;}
-  form input:focus,form textarea:focus{outline:none;border-color:var(--terra);background:#fff;}
+  form input,form textarea,form select{width:100%;padding:11px 13px;border:1.5px solid #ddd9e5;border-radius:9px;font-family:inherit;font-size:15px;color:var(--ink);background:#fdfcfe;}
+  form input:focus,form textarea:focus,form select:focus{outline:none;border-color:var(--terra);background:#fff;}
   form textarea{min-height:96px;resize:vertical;}
   .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
   @media(max-width:520px){.frow{grid-template-columns:1fr;}}
@@ -143,6 +143,13 @@
       <div><label>Email</label><input type="email" id="cf_email"></div>
       <div><label>Phone</label><input type="tel" id="cf_phone"></div>
     </div>
+    <label>How would you like us to reach you?</label>
+    <select id="cf_contact">
+      <option value="Email">Email</option>
+      <option value="Phone call">Phone call</option>
+      <option value="Text message">Text message</option>
+      <option value="Either email or phone">Either email or phone</option>
+    </select>
     <label>Brief Description of Your Situation</label>
     <textarea id="cf_msg"></textarea>
     <button type="submit" class="btn">Send Message</button>
@@ -171,7 +178,7 @@
   f.addEventListener('submit',function(e){
     e.preventDefault();
     var g=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};
-    var fn=g('cf_first'),ln=g('cf_last'),em=g('cf_email'),ph=g('cf_phone'),msg=g('cf_msg');
+    var fn=g('cf_first'),ln=g('cf_last'),em=g('cf_email'),ph=g('cf_phone'),pc=g('cf_contact'),msg=g('cf_msg');
     if(!em || !msg){ if(note){note.style.color='var(--terra)';note.textContent='Please add your email and a short message so we can reply.';} return; }
     if(note){note.style.color='var(--gray)';note.textContent='Sending\u2026';}
     if(btn){btn.disabled=true;}
@@ -185,6 +192,7 @@
         name:(fn+' '+ln).trim(),
         email:em,
         phone:ph,
+        'Preferred contact method':pc,
         message:msg
       })
     }).then(function(r){return r.json();}).then(function(d){
