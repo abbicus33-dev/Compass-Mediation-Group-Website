@@ -183,6 +183,7 @@
     var digits=ph.replace(/\D/g,'');
     var phoneFmt=(digits.length===10)?('('+digits.slice(0,3)+') '+digits.slice(3,6)+'-'+digits.slice(6)):ph;
     var subj='New website inquiry: '+who+(pc?(' — prefers '+pc):'');
+    var glance=who+' asked to be contacted by '+(pc||'any method')+' — phone '+(phoneFmt||'not given')+', email '+(em||'not given')+'.';
     if(!em || !msg){ if(note){note.style.color='var(--terra)';note.textContent='Please add your email and a short message so we can reply.';} return; }
     if(note){note.style.color='var(--gray)';note.textContent='Sending\u2026';}
     if(btn){btn.disabled=true;}
@@ -193,6 +194,7 @@
         access_key:'fa159105-3aa8-4e3a-8f74-eaf3f72e5d29',
         from_name:'Compass Mediation Group Website',
         subject:subj,
+        'At a glance':glance,
         name:(fn+' '+ln).trim(),
         email:em,
         phone:phoneFmt,
