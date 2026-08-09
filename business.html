@@ -265,14 +265,17 @@
 
 <style>
 /* Mobile navigation — hamburger menu (added for mobile usability) */
-.navtoggle{display:none;background:transparent;border:0;cursor:pointer;padding:8px;margin-left:auto;line-height:0}
+.navtoggle{display:none;background:transparent;border:0;cursor:pointer;padding:8px;line-height:0}
 .navtoggle span{display:block;width:26px;height:3px;background:#fff;border-radius:2px;margin:5px 0;transition:.25s}
 .nav.open .navtoggle span:nth-child(1){transform:translateY(8px) rotate(45deg)}
 .nav.open .navtoggle span:nth-child(2){opacity:0}
 .nav.open .navtoggle span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 @media(max-width:1000px){
- .nav{flex-wrap:wrap}
- .navtoggle{display:block}
+ .nav{flex-wrap:wrap;align-items:center;row-gap:8px}
+ .nav .brand{order:0;flex:0 0 100%;min-width:0}
+ .navtoggle{display:block;order:1;flex:0 0 auto}
+ .nav .actions{order:2;margin-left:auto}
+ .nav>ul{order:3}
  .nav.open>ul{display:flex !important;flex-direction:column;width:100%;gap:0;margin-top:10px}
  .nav.open>ul>li{border-top:1px solid rgba(255,255,255,.15)}
  .nav.open>ul>li>a.link{display:block;padding:12px 4px;font-size:16px}

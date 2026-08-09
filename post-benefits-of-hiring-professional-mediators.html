@@ -192,5 +192,38 @@
     <div class="footlinks"><a href="privacy-policy.html">Privacy Policy</a> · <a href="legal-notices.html">Legal Notices</a> · <a href="terms-of-service.html">Terms of Service</a></div>
   </footer>
 
+<style>
+/* Mobile navigation — hamburger menu (added for mobile usability) */
+.navtoggle{display:none;background:transparent;border:0;cursor:pointer;padding:8px;line-height:0}
+.navtoggle span{display:block;width:26px;height:3px;background:#fff;border-radius:2px;margin:5px 0;transition:.25s}
+.nav.open .navtoggle span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.nav.open .navtoggle span:nth-child(2){opacity:0}
+.nav.open .navtoggle span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media(max-width:1000px){
+ .nav{flex-wrap:wrap;align-items:center;row-gap:8px}
+ .nav .brand{order:0;flex:0 0 100%;min-width:0}
+ .navtoggle{display:block;order:1;flex:0 0 auto}
+ .nav .actions{order:2;margin-left:auto}
+ .nav>ul{order:3}
+ .nav.open>ul{display:flex !important;flex-direction:column;width:100%;gap:0;margin-top:10px}
+ .nav.open>ul>li{border-top:1px solid rgba(255,255,255,.15)}
+ .nav.open>ul>li>a.link{display:block;padding:12px 4px;font-size:16px}
+ .nav.open ul.sub{display:block !important;position:static;box-shadow:none;background:transparent;padding:0 0 8px}
+ .nav.open ul.sub li a{display:block;padding:8px 4px 8px 18px;color:#e9e6ef;font-size:14.5px}
+ .nav.open li.has-sub>a.link::after{content:""}
+}
+</style>
+<script>
+(function(){
+ var nav=document.querySelector('header > .nav');
+ if(!nav||nav.querySelector('.navtoggle'))return;
+ var b=document.createElement('button');
+ b.className='navtoggle';b.setAttribute('aria-label','Open menu');b.setAttribute('aria-expanded','false');
+ b.innerHTML='<span></span><span></span><span></span>';
+ var ul=nav.querySelector('ul');if(!ul)return;
+ nav.insertBefore(b,ul);
+ b.addEventListener('click',function(){var o=nav.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu');});
+})();
+</script>
 </body>
 </html>
