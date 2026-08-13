@@ -99,8 +99,8 @@
   footer .ph{margin-top:8px;font-size:16px;}
   footer .ph a{color:#eadfce;text-decoration:none;font-weight:700;}
   .revrotate{position:relative;max-width:720px;margin:0 auto;min-height:150px;}
-  .revslide{opacity:0;transition:opacity .6s ease;position:absolute;inset:0;}
-  .revslide.is-active{opacity:1;position:relative;}
+  .revslide{display:none;}
+  .revslide.is-active{display:block;animation:cmgfade .8s ease;}@keyframes cmgfade{from{opacity:0}to{opacity:1}}
   .revslide .stars{color:var(--terra);font-size:22px;letter-spacing:2px;margin-bottom:14px;}
   .revslide p{font-size:21px;line-height:1.5;color:#403b47;font-style:italic;margin-bottom:12px;}
   .revslide .who{color:var(--gray);font-weight:700;font-size:15px;}
