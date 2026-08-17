@@ -186,9 +186,128 @@
     <div class="shelfhead"><div class="sign">Press &amp; Features</div><p class="sub">Where Compass Mediation has been written up.</p></div>
     <div class="shelf"><a class="vol book cbj" href="https://calbizjournal.com/top-mediation-companies-in-seattle-2026-guide-to-choosing-the-right-mediator/" target="_blank" rel="noopener"><div class="art"></div><div class="spine"></div><div class="tag">Cal. Business Journal</div><div class="cap">Top Mediation Companies in Seattle 2026</div></a></div>
 
-    <div class="shelfhead"><div class="sign">Articles &amp; Blog</div><p class="sub">87 pieces on mediation, conflict, and finding a better way through. Tap any spine to read.</p></div>
-    <div class="shelflegend"><span><span class="dot" style="background:var(--terra)"></span>Blend originals &mdash; 27</span><span><span class="dot" style="background:#8a8496"></span>Compass articles &mdash; 60</span><span style="font-style:italic">tap any spine to read &rarr;</span></div>
-    <div class="spineshelf"><a class="spb src-compass sc4" style="height:206px" href="/post/what-actually-happens-in-a-first-mediation-session"><span class="t">What Actually Happens in a First Mediation Session</span><span class="band"></span></a></div>
+    <div class="shelfhead"><div class="sign">Articles &amp; Blog</div><p class="sub">85 pieces on mediation, conflict, and finding a better way through. Tap any spine to read.</p></div>
+
+<!-- ===== Compass featured post (CMG LIB) — auto-updates from newest article ===== -->
+<section id="cwntw" class="cw-ntw cw-CMG cw-LIB" style="display:none">
+  <div class="cw-ntw-head"><span class="cw-sign">New This Week</span><p class="cw-sub">The latest from Compass Mediation — fresh off the press.</p></div>
+  <div id="cwntw-card" class="cw-card"></div>
+  <div class="cw-shelf"></div>
+</section>
+<style>
+#cwntw.cw-ntw{position:relative;font-family:'Atkinson Hyperlegible',system-ui,sans-serif;}
+#cwntw .cw-ntw-head{max-width:1000px;margin:0 auto;padding:0 26px;}
+#cwntw .cw-sign{display:inline-block;background:var(--slate,#35354A);color:#f3efe6;font-family:'Cormorant Garamond',Georgia,serif;font-size:23px;font-weight:700;padding:7px 22px;border-radius:6px;margin:14px 0 4px;box-shadow:0 6px 12px rgba(0,0,0,.18);}
+#cwntw .cw-sub{color:#6b6152;font-size:14px;margin:2px 0 0;}
+#cwntw .cw-eyebrow{display:block;color:var(--terra,#C76C10);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:12px;margin-bottom:4px;}
+#cwntw .cw-htitle{font-family:'Cormorant Garamond',Georgia,serif;color:var(--slate,#35354A);font-size:34px;margin:0;font-weight:700;}
+#cwntw .cw-card{max-width:1000px;margin:20px auto 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:0;background:#fff;border:1px solid #d8cdbb;border-radius:16px;overflow:hidden;box-shadow:0 16px 34px rgba(53,53,74,.18);}
+#cwntw .cw-img{min-height:250px;background:linear-gradient(135deg,#4a4a66,#C76C10 170%);}
+#cwntw .cw-img.has-img{background-size:cover;background-position:center;}
+#cwntw .cw-body{padding:30px 34px;display:flex;flex-direction:column;justify-content:center;}
+#cwntw .cw-badge{align-self:flex-start;background:var(--terra,#C76C10);color:#fff;font-family:'Atkinson Hyperlegible',sans-serif;font-weight:700;font-size:11px;letter-spacing:.14em;padding:4px 11px;border-radius:999px;margin-bottom:12px;box-shadow:0 4px 10px rgba(199,108,16,.35);}
+#cwntw .cw-meta{color:var(--terra,#C76C10);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:12px;margin-bottom:8px;}
+#cwntw .cw-h3{font-family:'Cormorant Garamond',Georgia,serif;color:var(--slate,#35354A);font-size:30px;line-height:1.14;margin:0 0 12px;font-weight:700;}
+#cwntw .cw-p{color:#4a4552;font-size:16.5px;line-height:1.6;margin:0 0 20px;}
+#cwntw .cw-btn{display:inline-block;align-self:flex-start;background:var(--terra,#C76C10);color:#fff;text-decoration:none;padding:12px 24px;border-radius:9px;font-weight:700;}
+#cwntw .cw-btn:hover{filter:brightness(1.06);}
+#cwntw .cw-shelf{position:relative;max-width:1000px;margin:0 auto;height:16px;}
+#cwntw .cw-shelf::after{content:"";position:absolute;left:8px;right:8px;top:6px;height:16px;border-radius:2px 2px 5px 5px;background:linear-gradient(180deg,#845733,#5d3b21);box-shadow:0 13px 22px rgba(0,0,0,.30),inset 0 2px 0 rgba(255,255,255,.18);}
+#cwntw.cw-LIB{background:#e9e2d7;padding:26px 0 44px;}
+#cwntw.cw-HOME{background:#f0ece6;padding:56px 0;text-align:center;}
+#cwntw.cw-HOME .cw-card{text-align:left;}
+@media(max-width:720px){#cwntw .cw-card{grid-template-columns:1fr;}#cwntw .cw-img{min-height:180px;}}
+</style>
+<script>var CWCFG={site:'CMG',mode:'LIB',listUrl:null};
+(function(){
+  var C = CWCFG;
+  var sec = document.getElementById('cwntw');
+  var slot = document.getElementById('cwntw-card');
+  if(!sec||!slot) return;
+  function txt(el){ return el ? (el.textContent||'').trim() : ''; }
+  function el(tag,cls,text){ var e=document.createElement(tag); if(cls)e.className=cls; if(text!=null)e.textContent=text; return e; }
+  function within31(s){ var t=Date.parse(s); if(isNaN(t)) return null; return ((Date.now()-t)/86400000) <= 31; }
+  function setBadge(show){ var b=document.getElementById('cwntw-badge'); if(b) b.style.display = show?'':'none'; }
+  function setExcerpt(tx){ var p=document.getElementById('cwntw-exc'); if(p && tx){ p.textContent=tx; p.style.display=''; } }
+  function setImg(src){ if(!src) return; var i=slot.querySelector('.cw-img'); if(i){ i.style.backgroundImage="url('"+src+"')"; i.classList.add('has-img'); } }
+
+  function getListDoc(cb){
+    if(C.mode==='LIB'){ cb(document, true); return; }
+    fetch(C.listUrl,{cache:'no-store'}).then(function(r){return r.text();})
+      .then(function(h){ cb(new DOMParser().parseFromString(h,'text/html'), false); })
+      .catch(function(){});
+  }
+  function render(d){
+    slot.innerHTML='';
+    var img = el('div','cw-img');
+    if(d.img){ img.style.backgroundImage="url('"+d.img+"')"; img.className='cw-img has-img'; }
+    slot.appendChild(img);
+    var body = el('div','cw-body');
+    var badge = el('span','cw-badge','★ NEW'); badge.id='cwntw-badge'; body.appendChild(badge);
+    if(d.meta){ body.appendChild(el('span','cw-meta',d.meta)); }
+    body.appendChild(el('h3','cw-h3',d.title));
+    var p = el('p','cw-p', d.excerpt||''); p.id='cwntw-exc'; if(!d.excerpt) p.style.display='none';
+    body.appendChild(p);
+    var a = el('a','cw-btn', C.site==='CTC'?'Read the article':'Read the article →');
+    a.setAttribute('href', d.href); body.appendChild(a);
+    slot.appendChild(body);
+  }
+  function enrich(d){
+    if(d.dataDate){ var w=within31(d.dataDate); if(w!==null) setBadge(w); }
+    if(!d.postFile) return;
+    fetch(d.postFile,{cache:'no-store'}).then(function(r){return r.text();}).then(function(h){
+      var pd=new DOMParser().parseFromString(h,'text/html');
+      if(C.site==='CMG'){
+        var md=pd.querySelector('meta[name="description"]'); if(md) setExcerpt((md.getAttribute('content')||'').trim());
+        var pim=pd.querySelector('.post img'); if(pim) setImg(pim.getAttribute('src'));
+        else { var sh=pd.querySelector('.shero img, .prose img'); if(sh) setImg(sh.getAttribute('src')); }
+        if(!d.dataDate){
+          var mt=txt(pd.querySelector('.post .meta'))||txt(pd.querySelector('.meta'));
+          var m=mt.match(/([A-Z][a-z]+ \d{1,2}, \d{4})/); if(m){ var w2=within31(m[1]); if(w2!==null) setBadge(w2); }
+        }
+      } else {
+        if(!d.dataDate){
+          var s=pd.querySelector('script[type="application/ld+json"]');
+          if(s){ try{ var j=JSON.parse(s.textContent); var dp=j.datePublished||j.dateModified; if(dp){ var w3=within31(dp); if(w3!==null) setBadge(w3); } }catch(e){} }
+        }
+      }
+    }).catch(function(){});
+  }
+  getListDoc(function(doc, inPage){
+    try{
+      var item, d={};
+      if(C.site==='CTC'){
+        item = doc.querySelector('.blog-grid .blog-card:not(.blog-card--soon)') || doc.querySelector('.blog-card:not(.blog-card--soon)');
+        if(!item) return;
+        var a = item.querySelector('a[href]');
+        d.href = a ? a.getAttribute('href') : 'blog.html';
+        var im = item.querySelector('.blog-card__img, img');
+        d.img = (im && im.tagName==='IMG') ? im.getAttribute('src') : '';
+        d.meta = txt(item.querySelector('.blog-card__meta'));
+        d.title = txt(item.querySelector('h2')) || 'Read our latest article';
+        d.excerpt = txt(item.querySelector('.blog-card__body p')) || '';
+        d.postFile = d.href;
+      } else {
+        item = doc.querySelector('.blogshelf .spb') || doc.querySelector('.spineshelf .spb') || doc.querySelector('.spb');
+        if(!item) return;
+        d.href = item.getAttribute('href') || '#';
+        d.title = txt(item.querySelector('.t')).replace(/[….]+$/,'').trim() || 'Our latest article';
+        d.meta = 'From the Library'; d.img=''; d.excerpt='';
+        var slug = d.href.replace(/^.*\/post\//,'').replace(/\/+$/,'');
+        d.postFile = slug ? ('post-'+slug+'.html') : '';
+      }
+      d.dataDate = item.getAttribute('data-date') || '';
+      render(d);
+      if(inPage && item && item.parentNode){ item.parentNode.removeChild(item); }
+      sec.style.display='';
+      enrich(d);
+    }catch(e){}
+  });
+})();
+</script>
+<!-- ===== end Compass featured post ===== -->
+
+    <div class="shelflegend"><span><span class="dot" style="background:var(--terra)"></span>Blend originals &mdash; 27</span><span><span class="dot" style="background:#8a8496"></span>Compass articles &mdash; 59</span><span style="font-style:italic">tap any spine to read &rarr;</span></div>
     <div class="spineshelf"><a class="spb src-compass sc3" style="height:222px" href="/post/back-to-school-co-parenting"><span class="t">Back-to-School Without the Battle&hellip;</span><span class="band"></span></a><a class="spb src-blend sc1" style="height:210px" href="/post/comprehensive-affordable-divorce-mediation-options-explained"><span class="t">Comprehensive Affordable Divorce&hellip;</span><span class="band"></span></a><a class="spb src-blend sc2" style="height:224px" href="/post/top-divorce-mediators-in-new-york"><span class="t">Top Divorce Mediators in Seattle</span><span class="band"></span></a><a class="spb src-blend sc3" style="height:198px" href="/post/why-a-divorce-mediator-can-save-you-time-and-stress"><span class="t">Why a Divorce Mediator Can Save You&hellip;</span><span class="band"></span></a><a class="spb src-blend sc4" style="height:216px" href="/post/embrace-harmony-make-mediation-your-new-year-s-resolution"><span class="t">Embrace Harmony: Make Mediation Your&hellip;</span><span class="band"></span></a><a class="spb src-blend sc5" style="height:204px" href="/post/finding-peace-at-the-christmas-table-how-mediation-can-help-resolve-family-conflicts"><span class="t">Finding Peace at the Christmas Table&hellip;</span><span class="band"></span></a><a class="spb src-blend sc6" style="height:222px" href="/post/what-is-your-body-telling-people"><span class="t">What is your body telling people?&hellip;</span><span class="band"></span></a><a class="spb src-blend sc7" style="height:200px" href="/post/the-double-edged-sword-of-sarcasm"><span class="t">The Double-Edged Sword of Sarcasm</span><span class="band"></span></a><a class="spb src-blend sc8" style="height:214px" href="/post/how-to-mediate-a-successful-parenting-plan"><span class="t">How to Mediate a Successful Parenting&hellip;</span><span class="band"></span></a><a class="spb src-blend sc1" style="height:208px" href="/post/conflict-is-a-canyon"><span class="t">Conflict Is A Canyon</span><span class="band"></span></a><a class="spb src-blend sc2" style="height:220px" href="/post/the-benefits-of-mediation-in-business-disputes"><span class="t">The Benefits of Mediation in Business&hellip;</span><span class="band"></span></a><a class="spb src-blend sc3" style="height:202px" href="/post/dignity-a-key-to-successful-mediation"><span class="t">Respecting Dignity: A Key to&hellip;</span><span class="band"></span></a><a class="spb src-blend sc4" style="height:218px" href="/post/how-to-find-a-great-divorce-mediator-the-ultimate-guide"><span class="t">How to Find a Great Divorce Mediator&hellip;</span><span class="band"></span></a><a class="spb src-blend sc5" style="height:210px" href="/post/stay-together-or-separate-what-is-better-for-the-kids"><span class="t">Stay or Separate; which is better for&hellip;</span><span class="band"></span></a></div>
     <div class="spineshelf"><a class="spb src-blend sc6" style="height:224px" href="/post/you-have-created-everything-you-are-experiencing"><span class="t">You have created everything you are&hellip;</span><span class="band"></span></a><a class="spb src-blend sc7" style="height:198px" href="/post/tips-for-managing-children-s-needs-when-divorce-impairs-communications"><span class="t">Tips for Managing Children's needs&hellip;</span><span class="band"></span></a><a class="spb src-blend sc8" style="height:216px" href="/post/the-therapy-cocktail-divorcing-parents-ultimate-gift-to-their-children"><span class="t">The Therapy Cocktail:   Divorcing&hellip;</span><span class="band"></span></a><a class="spb src-blend sc1" style="height:204px" href="/post/mediation-a-fantastic-tool-for-estate-probate-conflicts"><span class="t">Mediation:  A Fantastic Tool for&hellip;</span><span class="band"></span></a><a class="spb src-blend sc2" style="height:222px" href="/post/back-in-the-soup"><span class="t">Back in the Soup</span><span class="band"></span></a><a class="spb src-blend sc3" style="height:200px" href="/post/covid-19-decreased-the-rate-of-divorce-and-may-have-changed-it-forever"><span class="t">Covid-19 Changed the Face of Divorce</span><span class="band"></span></a><a class="spb src-blend sc4" style="height:214px" href="/post/mediation-for-struggling-landlords-and-tenants"><span class="t">Mediation for Struggling Landlords and&hellip;</span><span class="band"></span></a><a class="spb src-blend sc5" style="height:208px" href="/post/effectiveness-of-mediation"><span class="t">Mediation - Born Again!</span><span class="band"></span></a><a class="spb src-blend sc6" style="height:220px" href="/post/what-s-news-next-quarter"><span class="t">What&#x27;s News Next Quarter?</span><span class="band"></span></a><a class="spb src-blend sc7" style="height:202px" href="/post/why-mediation"><span class="t">Mediation - What and Why?</span><span class="band"></span></a><a class="spb src-blend sc8" style="height:218px" href="/post/what-s-up-next"><span class="t">What&#x27;s up next?</span><span class="band"></span></a><a class="spb src-blend sc1" style="height:210px" href="/post/tips-for-better-conversations-in-your-career-and-business"><span class="t">Tips for Better Conversations in Your&hellip;</span><span class="band"></span></a></div>
     <div class="spineshelf"><a class="spb src-blend sc2" style="height:224px" href="/post/compassion-is-key-to-your-success"><span class="t">Compassion Is Key To Your Success.</span><span class="band"></span></a><a class="spb src-blend sc3" style="height:198px" href="/post/untitled"><span class="t">Let&#x27;s begin...</span><span class="band"></span></a><a class="spb src-compass sc1" style="height:210px" href="/post/finding-the-right-mediator-for-divorce"><span class="t">Finding the Right Mediator for Divorce</span><span class="band"></span></a><a class="spb src-compass sc2" style="height:224px" href="/post/a-guide-to-how-virtual-mediation-works-in-divorce-cases"><span class="t">A Guide to How Virtual Mediation Works&hellip;</span><span class="band"></span></a><a class="spb src-compass sc3" style="height:198px" href="/post/understanding-the-divorce-resolution-process-1"><span class="t">Understanding the Divorce Resolution&hellip;</span><span class="band"></span></a><a class="spb src-compass sc4" style="height:216px" href="/post/resolving-workplace-disputes-through-mediation"><span class="t">Resolving Workplace Disputes Through&hellip;</span><span class="band"></span></a><a class="spb src-compass sc5" style="height:204px" href="/post/resolving-disputes-with-business-conflict-mediation-services-1"><span class="t">Resolving Disputes with Business&hellip;</span><span class="band"></span></a><a class="spb src-compass sc6" style="height:222px" href="/post/business-conflict-resolutions-through-mediation"><span class="t">Business Conflict Resolutions Through&hellip;</span><span class="band"></span></a><a class="spb src-compass sc7" style="height:200px" href="/post/comprehensive-guide-to-family-conflict-services"><span class="t">Comprehensive Guide to Family Conflict&hellip;</span><span class="band"></span></a><a class="spb src-compass sc8" style="height:214px" href="/post/effective-workplace-conflict-resolution-tips"><span class="t">Effective Conflict Resolution&hellip;</span><span class="band"></span></a><a class="spb src-compass sc1" style="height:208px" href="/post/effective-strategies-for-resolving-family-disputes"><span class="t">Effective Strategies for Resolving&hellip;</span><span class="band"></span></a><a class="spb src-compass sc2" style="height:220px" href="/post/understanding-the-divorce-resolution-process-3"><span class="t">Understanding the Divorce Resolution&hellip;</span><span class="band"></span></a></div>
