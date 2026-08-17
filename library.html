@@ -197,11 +197,11 @@
 <style>
 #cwntw.cw-ntw{position:relative;font-family:'Atkinson Hyperlegible',system-ui,sans-serif;}
 #cwntw .cw-ntw-head{max-width:1000px;margin:0 auto;padding:0 26px;}
-#cwntw .cw-sign{display:inline-block;background:var(--slate,#35354A);color:#f3efe6;font-family:'Cormorant Garamond',Georgia,serif;font-size:23px;font-weight:700;padding:7px 22px;border-radius:6px;margin:14px 0 4px;box-shadow:0 6px 12px rgba(0,0,0,.18);}
+#cwntw .cw-sign{display:inline-block;background:var(--terra,#C76C10);color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:23px;font-weight:700;padding:7px 22px;border-radius:6px;margin:14px 0 4px;box-shadow:0 6px 12px rgba(0,0,0,.18);}
 #cwntw .cw-sub{color:#6b6152;font-size:14px;margin:2px 0 0;}
 #cwntw .cw-eyebrow{display:block;color:var(--terra,#C76C10);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:12px;margin-bottom:4px;}
 #cwntw .cw-htitle{font-family:'Cormorant Garamond',Georgia,serif;color:var(--slate,#35354A);font-size:34px;margin:0;font-weight:700;}
-#cwntw .cw-card{max-width:1000px;margin:20px auto 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:0;background:#fff;border:1px solid #d8cdbb;border-radius:16px;overflow:hidden;box-shadow:0 16px 34px rgba(53,53,74,.18);}
+#cwntw .cw-card{max-width:1000px;margin:20px auto 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:0;background:#fff;border:2px solid var(--terra,#C76C10);border-radius:16px;overflow:hidden;box-shadow:0 18px 38px rgba(53,53,74,.24);}
 #cwntw .cw-img{min-height:250px;background:linear-gradient(135deg,#4a4a66,#C76C10 170%);}
 #cwntw .cw-img.has-img{background-size:cover;background-position:center;}
 #cwntw .cw-body{padding:30px 34px;display:flex;flex-direction:column;justify-content:center;}
@@ -219,7 +219,7 @@
 @media(max-width:720px){#cwntw .cw-card{grid-template-columns:1fr;}#cwntw .cw-img{min-height:180px;}}
 </style>
 <script>var CWCFG={site:'CMG',mode:'LIB',listUrl:null};
-(function(){
+document.addEventListener('DOMContentLoaded',function(){
   var C = CWCFG;
   var sec = document.getElementById('cwntw');
   var slot = document.getElementById('cwntw-card');
@@ -303,7 +303,7 @@
       enrich(d);
     }catch(e){}
   });
-})();
+});
 </script>
 <!-- ===== end Compass featured post ===== -->
 
