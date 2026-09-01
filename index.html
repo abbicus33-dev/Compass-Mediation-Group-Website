@@ -379,9 +379,9 @@
         if(!item) return;
         d.href = item.getAttribute('href') || '#';
         d.title = txt(item.querySelector('.t')).replace(/[….]+$/,'').trim() || 'Our latest article';
-        d.meta = 'From the Library'; d.img=''; d.excerpt='';
+        d.meta = 'From the Library'; d.img=item.getAttribute('data-img')||''; d.excerpt=item.getAttribute('data-excerpt')||'';
         var slug = d.href.replace(/^.*\/post\//,'').replace(/\/+$/,'');
-        d.postFile = slug ? ('post-'+slug+'.html') : '';
+        d.postFile = item.getAttribute('data-post-file') || (slug ? ('post-'+slug+'.html') : '');
       }
       d.dataDate = item.getAttribute('data-date') || '';
       render(d);
