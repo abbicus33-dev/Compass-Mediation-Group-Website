@@ -313,7 +313,12 @@
   if(!sec||!slot) return;
   function txt(el){ return el ? (el.textContent||'').trim() : ''; }
   function el(tag,cls,text){ var e=document.createElement(tag); if(cls)e.className=cls; if(text!=null)e.textContent=text; return e; }
-  function within31(s){ var t=Date.parse(s); if(isNaN(t)) return null; return ((Date.now()-t)/86400000) <= 31; }
+  function within30(s){
+    var published=Date.parse(s); if(isNaN(published)) return null;
+    var today=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+    var age=(Date.parse(today)-published)/86400000;
+    return age>=0 && age<=30;
+  }
   function setBadge(show){ var b=document.getElementById('cwntw-badge'); if(b) b.style.display = show?'':'none'; }
   function setExcerpt(tx){ var p=document.getElementById('cwntw-exc'); if(p && tx){ p.textContent=tx; p.style.display=''; } }
   function setImg(src){ if(!src) return; var i=slot.querySelector('.cw-img'); if(i){ i.style.backgroundImage="url('"+src+"')"; i.classList.add('has-img'); } }
@@ -340,7 +345,7 @@
     slot.appendChild(body);
   }
   function enrich(d){
-    if(d.dataDate){ var w=within31(d.dataDate); if(w!==null) setBadge(w); }
+    if(d.dataDate){ var w=within30(d.dataDate); if(w!==null) setBadge(w); }
     if(!d.postFile) return;
     fetch(d.postFile,{cache:'no-store'}).then(function(r){return r.text();}).then(function(h){
       var pd=new DOMParser().parseFromString(h,'text/html');
@@ -350,12 +355,12 @@
         else { var sh=pd.querySelector('.shero img, .prose img'); if(sh) setImg(sh.getAttribute('src')); }
         if(!d.dataDate){
           var mt=txt(pd.querySelector('.post .meta'))||txt(pd.querySelector('.meta'));
-          var m=mt.match(/([A-Z][a-z]+ \d{1,2}, \d{4})/); if(m){ var w2=within31(m[1]); if(w2!==null) setBadge(w2); }
+          var m=mt.match(/([A-Z][a-z]+ \d{1,2}, \d{4})/); if(m){ var w2=within30(m[1]); if(w2!==null) setBadge(w2); }
         }
       } else {
         if(!d.dataDate){
           var s=pd.querySelector('script[type="application/ld+json"]');
-          if(s){ try{ var j=JSON.parse(s.textContent); var dp=j.datePublished||j.dateModified; if(dp){ var w3=within31(dp); if(w3!==null) setBadge(w3); } }catch(e){} }
+          if(s){ try{ var j=JSON.parse(s.textContent); var dp=j.datePublished||j.dateModified; if(dp){ var w3=within30(dp); if(w3!==null) setBadge(w3); } }catch(e){} }
         }
       }
     }).catch(function(){});
