@@ -32,8 +32,10 @@ for route in config['routes']:
 redirects = [{'route': stem + '*', 'redirect': aliases[stem], 'statusCode': 301}
              for stem in sorted(aliases, key=lambda s: (-len(s), s))]
 config['routes'] = redirects + routes
+config['trailingSlash'] = 'never'
 encoded = json.dumps(config, separators=(',', ':'))
 assert len(encoded.encode()) < 20000, 'Azure configuration exceeds 20 KB'
 (out / 'staticwebapp.config.json').write_text(encoded)
 print(f'Prepared site with {len(aliases)} legacy blog redirects; configuration {len(encoded.encode())} bytes')
+
 
